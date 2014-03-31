@@ -597,18 +597,45 @@
 							<pathText k="name" font-style="bold" font-size="10" stroke="#efadaa" stroke-width="2.0" />
 						</rule>
 					</rule>
+
+<!-- Original rules for tertiary highways (like Bybee)-->
+		<!--					
 					<rule e="way" k="highway" v="tertiary">
 						<line stroke="#ffff90" stroke-width="1.5" />
 						<rule e="way" k="*" v="*" zoom-min="14">
 							<pathText k="name" font-style="bold" font-size="10" stroke="#ffff90" stroke-width="2.0" />
 						</rule>
 					</rule>
+		-->
+<!-- Start, Kristi's change for "tertiary" "highway" "way" below -->
+<!-- changes include stroke (yellow to green--for spot check), zoom-min (14 to 10), font-size (10 to 14) -->
+					<rule e="way" k="highway" v="tertiary">
+						<line stroke="#66FF66" stroke-width="1.5" />
+						<rule e="way" k="*" v="*" zoom-min="10">
+							<pathText k="name" font-style="bold" font-size="14" stroke="#ffff90" stroke-width="2.0" />
+						</rule>
+					</rule>
+<!-- End, Kristi's rule change -->
+
+<!-- Original rules for secondary_link highways  (like tacoma/milwaukie) -->
+		<!--					
 					<rule e="way" k="highway" v="secondary_link">
 						<line stroke="#fdbf6f" stroke-width="1.5" />
 						<rule e="way" k="*" v="*" zoom-min="14">
 							<pathText k="name" font-style="bold" font-size="10" stroke="#fdbf6f" stroke-width="2.0" />
 						</rule>
 					</rule>
+		-->
+<!-- Start, Kristi's change for secondary highways below -->
+<!-- changes include stroke (orange to pink--for a spot check), zoom-min (14 to 10), font-size (10 to 14) -->
+					<rule e="way" k="highway" v="secondary_link">
+						<line stroke="#FF66FF" stroke-width="1.5" />
+						<rule e="way" k="*" v="*" zoom-min="10">
+							<pathText k="name" font-style="bold" font-size="14" stroke="#FF66FF" stroke-width="2.0" />
+						</rule>
+					</rule>
+<!-- End, Kristi's rule change -->
+
 					<rule e="way" k="highway" v="primary_link">
 						<line stroke="#e46d71" stroke-width="1.5" />
 						<rule e="way" k="*" v="*" zoom-min="14">
@@ -627,12 +654,26 @@
 							<pathText k="name" font-style="bold" font-size="10" stroke="#809bc0" stroke-width="2.0" />
 						</rule>
 					</rule>
+<!-- Original rules for secondary (same as secondary_link) highways (like tacoma/milwaukie) -->
+		<!--					
 					<rule e="way" k="highway" v="secondary">
 						<line stroke="#fdbf6f" stroke-width="1.5" />
 						<rule e="way" k="*" v="*" zoom-min="14">
 							<pathText k="name" font-style="bold" font-size="10" stroke="#fdbf6f" stroke-width="2.0" />
 						</rule>
 					</rule>
+		-->
+<!-- Start, Kristi's change for secondary highways below -->
+<!-- changes include stroke (orange to pink--for a spot check), zoom-min (14 to 10), font-size (10 to 14) -->
+					<rule e="way" k="highway" v="secondary">
+						<line stroke="#FF66FF" stroke-width="1.5" />
+						<rule e="way" k="*" v="*" zoom-min="10">
+							<pathText k="name" font-style="bold" font-size="14" stroke="#FF66FF" stroke-width="2.0" />
+						</rule>
+					</rule>
+<!-- End, Kristi's rule change -->
+
+
 					<rule e="way" k="highway" v="primary">
 						<line stroke="#e46d71" stroke-width="1.5" />
 						<rule e="way" k="*" v="*" zoom-min="14">
@@ -640,6 +681,8 @@
 							<pathText k="ref" font-style="bold" font-size="12" stroke="#ffffff" fill="#606060" stroke-width="2.0" />
 						</rule>
 					</rule>
+<!-- Original rules for trunk highways (like mcglouglin)-->
+		<!--					
 					<rule e="way" k="highway" v="trunk">
 						<line stroke="#7fc97f" stroke-width="1.5" />
 						<rule e="way" k="*" v="*" zoom-min="14">
@@ -647,6 +690,18 @@
 							<pathText k="ref" font-style="bold" font-size="12" stroke="#ffffff" fill="#606060" stroke-width="2.0" />
 						</rule>
 					</rule>
+		-->
+<!-- Start, Kristi's change for trunk highways below -->
+<!-- changes include stroke (green to purple--for a spot check), zoom-min (14 to 10), font-size (10 to 14) -->
+					<rule e="way" k="highway" v="trunk">
+						<line stroke="#9933FF" stroke-width="1.5" />
+						<rule e="way" k="*" v="*" zoom-min="10">
+							<pathText k="name" font-style="bold" font-size="14" stroke="#9933FF" stroke-width="2.0" />
+							<pathText k="ref" font-style="bold" font-size="14" stroke="#ffffff" fill="#606060" stroke-width="2.0" />
+						</rule>
+					</rule>
+<!-- End, Kristi's rule change -->
+
 					<rule e="way" k="highway" v="motorway">
 						<line stroke="#809bc0" stroke-width="1.7" />
 						<rule e="way" k="*" v="*" zoom-min="14">
